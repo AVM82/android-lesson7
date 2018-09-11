@@ -56,6 +56,10 @@ public abstract class Shape extends View {
         }
         animatorSet1 = new AnimatorSet();
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        setShapeColor(shapeColor);
+    }
+
+    void setShapeColor(int shapeColor) {
         paint.setColor(shapeColor);
     }
 
@@ -68,10 +72,6 @@ public abstract class Shape extends View {
                 float y = event.getY();
                 if (left < x && left + shapeSize > x) {
                     if (top < y && top + shapeSize > y) {
-//                        if (animatorSet1.isRunning()) {
-//                            animatorSet1.cancel();
-//                            return true;
-//                        }
                         Display display = getDisplay();
                         Point size = new Point();
                         display.getSize(size);
@@ -79,10 +79,7 @@ public abstract class Shape extends View {
                         final float displayHeight = size.y;
                         animatorX = ObjectAnimator.ofFloat(this, "translationX", displayWidth);
                         animatorY = ObjectAnimator.ofFloat(this, "translationY", displayHeight);
-
                         animatorSet1.playTogether(animatorX, animatorY);
-//                        animatorX.setDuration(18000);
-//                        animatorY.setDuration(9000);
                         animatorSet1.setDuration(9000);
                         animatorSet1.start();
                     }

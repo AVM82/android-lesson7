@@ -2,8 +2,11 @@ package org.avm.lesson7.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+
+import java.util.Random;
 
 public class CircleShape extends Shape {
     private float radius;
@@ -27,7 +30,10 @@ public class CircleShape extends Shape {
         super.init(set);
         radius = shapeSize / 2;
         cx = (left + shapeSize) / 2;
-        cy = (top + shapeSize) / 2;
+        cy = shapeSize / 2;
+        Random rnd = new Random();
+        int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+        setShapeColor(color);
     }
 
     @Override
