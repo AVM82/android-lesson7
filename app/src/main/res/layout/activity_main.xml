@@ -5,20 +5,172 @@
     android:id="@+id/custom_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <org.avm.lesson7.view.Shape
+    <org.avm.lesson7.view.RectShape
         android:id="@+id/shape"
         android:layout_width="50dp"
         android:layout_height="50dp"
         app:color="@color/colorPrimaryDark"
         app:size="@dimen/shape_size"
-        app:left = "0dp"
-        app:top = "0dp"/>
-    <org.avm.lesson7.view.Shape
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.CircleShape
         android:id="@+id/shape2"
         android:layout_width="55dp"
         android:layout_height="50dp"
         app:color="@color/colorPrimaryDark"
         app:size="@dimen/shape_size"
         app:left = "5dp"
-        app:top = "0dp"/>
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.TriangleShape
+        android:id="@+id/shape3"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.RectShape
+        android:id="@+id/shape4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.CircleShape
+        android:id="@+id/shape5"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.TriangleShape
+        android:id="@+id/shape6"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.RectShape
+        android:id="@+id/shape7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.CircleShape
+        android:id="@+id/shape8"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.TriangleShape
+        android:id="@+id/shape9"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.RectShape
+        android:id="@+id/shape10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.CircleShape
+        android:id="@+id/shape11"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.TriangleShape
+        android:id="@+id/shape12"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.RectShape
+        android:id="@+id/shape13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.CircleShape
+        android:id="@+id/shape14"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.TriangleShape
+        android:id="@+id/shape15"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.RectShape
+        android:id="@+id/shape16"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.CircleShape
+        android:id="@+id/shape17"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.TriangleShape
+        android:id="@+id/shape18"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.RectShape
+        android:id="@+id/shape19"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.CircleShape
+        android:id="@+id/shape20"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
+    <org.avm.lesson7.view.TriangleShape
+        android:id="@+id/shape21"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "5dp"/>
 </org.avm.lesson7.view.CustomLayout>

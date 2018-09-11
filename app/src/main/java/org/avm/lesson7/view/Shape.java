@@ -17,14 +17,13 @@ import android.view.View;
 
 import org.avm.lesson7.R;
 
-public class Shape extends View {
+public abstract class Shape extends View {
     private static final int SHAPE_SIZE_DEF = 100;
-    Rect rect;
-    Paint paint;
-    private int shapeColor;
-    private int shapeSize;
-    private float startX;
-    private float startY;
+    protected Paint paint;
+    protected int shapeColor;
+    protected int shapeSize;
+    protected int left;
+    protected int top;
 
     ObjectAnimator animatorX;
     ObjectAnimator animatorY;
@@ -46,27 +45,18 @@ public class Shape extends View {
         init(attrs);
     }
 
-    private void init(@Nullable AttributeSet set) {
+    void init(@Nullable AttributeSet set) {
         if (set != null) {
-            rect = new Rect();
             TypedArray typedArray = getContext().obtainStyledAttributes(set, R.styleable.Shape);
             shapeColor = typedArray.getColor(R.styleable.Shape_color, Color.GREEN);
             shapeSize = typedArray.getDimensionPixelSize(R.styleable.Shape_size, SHAPE_SIZE_DEF);
-            rect.left = typedArray.getDimensionPixelSize(R.styleable.Shape_left, 33);
-            rect.top = typedArray.getDimensionPixelSize(R.styleable.Shape_top, 33);
+            left = typedArray.getDimensionPixelSize(R.styleable.Shape_left, 33);
+            top = typedArray.getDimensionPixelSize(R.styleable.Shape_top, 33);
             typedArray.recycle();
         }
         animatorSet1 = new AnimatorSet();
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(shapeColor);
-    }
-
-    @Override
-    protected void onDraw(Canvas canvas) {
-        rect.right = rect.left + shapeSize;
-        rect.bottom = rect.top + shapeSize;
-        canvas.drawRect(rect, paint);
-
     }
 
     @Override
@@ -76,14 +66,12 @@ public class Shape extends View {
             case MotionEvent.ACTION_DOWN: {
                 float x = event.getX();
                 float y = event.getY();
-                if (rect.left < x && rect.right > x) {
-                    if (rect.top < y && rect.bottom > y) {
-                        if (animatorSet1.isRunning()) {
-                            animatorSet1.cancel();
-                            this.setX(rect.left);
-                            this.setY(rect.top);
-                            return true;
-                        }
+                if (left < x && left + shapeSize > x) {
+                    if (top < y && top + shapeSize > y) {
+//                        if (animatorSet1.isRunning()) {
+//                            animatorSet1.cancel();
+//                            return true;
+//                        }
                         Display display = getDisplay();
                         Point size = new Point();
                         display.getSize(size);
@@ -93,8 +81,9 @@ public class Shape extends View {
                         animatorY = ObjectAnimator.ofFloat(this, "translationY", displayHeight);
 
                         animatorSet1.playTogether(animatorX, animatorY);
-                        animatorX.setDuration(18000);
-                        animatorY.setDuration(9000);
+//                        animatorX.setDuration(18000);
+//                        animatorY.setDuration(9000);
+                        animatorSet1.setDuration(9000);
                         animatorSet1.start();
                     }
                 }

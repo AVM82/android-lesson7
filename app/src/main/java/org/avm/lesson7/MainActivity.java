@@ -13,12 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         CustomLayout layout = findViewById(R.id.custom_layout);
-        layout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setContentView(R.layout.activity_main);
-            }
-        });
-
+        layout.setOnClickListener((v) -> setContentView(R.layout.activity_main));
     }
 }
