@@ -1,8 +1,10 @@
 package org.avm.lesson7;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+
+import org.avm.lesson7.view.CustomLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +12,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        CustomLayout layout = findViewById(R.id.custom_layout);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.activity_main);
+            }
+        });
+
     }
 }

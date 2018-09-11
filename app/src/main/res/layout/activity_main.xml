@@ -1,48 +1,24 @@
 <org.avm.lesson7.view.CustomLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@color/colorPrimaryDark">
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button2514354345564" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <org.avm.lesson7.view.Shape
+        android:id="@+id/shape"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "0dp"
+        app:top = "0dp"/>
+    <org.avm.lesson7.view.Shape
+        android:id="@+id/shape2"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:color="@color/colorPrimaryDark"
+        app:size="@dimen/shape_size"
+        app:left = "5dp"
+        app:top = "0dp"/>
 </org.avm.lesson7.view.CustomLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Shape">
+        <attr name="color" format="color"/>
+        <attr name="size" format="dimension"/>
+        <attr name="left" format="dimension"/>
+        <attr name="top" format="dimension"/>
+    </declare-styleable>
+</resources>
